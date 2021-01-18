@@ -1,0 +1,40 @@
+User Action Pseudo-classes 가상 액션
+
+1. element:hober     // 버튼같은것을 가져다 댔을때(클릭x) 액션이 있는것 예를들면 색상변경이나 이런것들
+
+2. element:active    // 버튼같은것을 눌렀을 때 액션이 있는것 
+
+3. element:focus     // ex) 이메일 입력창 같은곳에 클릭 했을때 테투리 색 변경 
+
+
+<body>
+    <section>
+        <h1>User Action Pseudo-classes</h1>
+        <a href="#"> Kimbug Youtube channel</a>
+    
+        <input type="email"
+        placeholder="Enter your email"/>
+   </section>
+</body>
+
+
+------------------------------------------------
+
+
+a:hover {
+    background-color:"7e5bef"
+}
+
+
+a:active {
+    background-color:#592dea
+}
+
+
+input:focus{                         
+    border-color: #1fb6ff
+}
+
+
+input:active                             // 누르는 찰나에 색상변경   포커스 전 색상 적용
+ border-color: #1fb6TF

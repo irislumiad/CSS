@@ -1,0 +1,94 @@
+Child, Descendant & Sibling Combinatios
+
+자식   자손          형제선택자 들
+
+
+HTML 에서 자식 CSS 에서 
+
+parent > Child
+
+
+HTML 에서 자손관계는 CSS 에서 
+
+parent descendants    // ( 공백을 비워준다. )
+
+
+ex)
+
+<body>
+ <section>
+  <h1>Heading</h1>
+  <ul>
+    <l1>
+      <h1>  블라블라  </h1>
+      <p>   블라블라  <p>
+
+    </li>
+    <li>
+    </li>
+
+--> h1을 모두 택하고 싶은 경우 
+
+  section h1 {
+      color: #0066ff
+  }
+
+--> section 과 h1 사이에 공백을 주면 자손부터 자신까지 다 선택가능  shift 같은 개념 
+
+
+자식만 하고 싶은 경우 
+
+section > h1 {
+    color: #901225 로 택하면 된다
+}
+
+
+----------------------------------------------------------
+
+
+Sibling Combinatios
+
+
+<body>
+ <section>
+  <h1>Heading</h1>
+  <ul>
+    <l1>
+      <h1>  블라블라  </h1>
+      <p>   블라블라  <p>
+
+    </li>
+    <li class = "active"> someting
+    </li>
+    <li>
+    someting
+    </li>
+    <li>
+    someting
+    </li>
+    <li>
+    someting
+    </li>
+
+
+.active {
+    font-weight: 700;
+}
+
+하면 class 액티브 값만 변경 
+
+
+.active ~ li {                      // 액티브 다음의 형제 li 전부 
+   color: #0066ff;
+}
+
+하면 class 액티브 다음꺼부터 모두 색상변경 
+
+
+.active + li {
+    color: #901225
+}
+
+하면 class 액티브 다음꺼 하나만 색상변경
+
+

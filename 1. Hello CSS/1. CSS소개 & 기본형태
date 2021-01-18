@@ -1,0 +1,10 @@
+selector {                      // 선택자
+    property: value;            // CSS 선언부 
+}
+
+
+
+
+selector {                      
+    property: value;            // 속성: 값;
+}
