@@ -1,0 +1,33 @@
+.parent {
+    background-color: white;
+}
+
+.child,
+.other{
+    height: 50px;
+    color: black;
+    line-height: 50px;
+    text-indent: 20px;
+}
+
+.child{
+    margin-left: auto;   /* 마진 왼쪽에 몰빵 */
+    margin-right: auto; /* 마진 오른쪽에 몰빵 결론은 중간 배치 */
+    width: 500px;
+    background-color: yellow;
+}
+
+
+.other{
+    width: 100px;
+    background-color: red;
+}
+
+
+/**/
+
+
+.span {
+    color: white;
+    background-color: #0066ff;
+}
